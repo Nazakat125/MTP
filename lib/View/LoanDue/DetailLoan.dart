@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:mtp/Utils/AppColor.dart';
 import 'package:mtp/Utils/AppText.dart';
 import 'package:mtp/View/LoanDue/Component/AddMoney.dart';
+import 'package:mtp/View/LoanDue/ReceivingLoan.dart';
 import 'package:mtp/Widgets/CustomButton.dart';
 import 'package:mtp/Widgets/CustomSizeBox.dart';
 import 'package:mtp/Widgets/CustomText.dart';
@@ -25,7 +26,7 @@ class _DetailLaonState extends State<DetailLaon> {
           title: CustomText(
             text: AppText.Loan_Detail,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
@@ -48,7 +49,7 @@ class _DetailLaonState extends State<DetailLaon> {
                   children: [
                     Icon(
                       Icons.attach_money,
-                      size: 25.sp,
+                      size: 28.sp,
                       color: AppColor.black,
                     ),
                     CustomSizeBox(
@@ -57,17 +58,17 @@ class _DetailLaonState extends State<DetailLaon> {
                     CustomText(
                       text: "\$10000.00",
                       fontWeight: FontWeight.w700,
-                      fontSize: 16.sp,
+                      fontSize: 20.sp,
                       color: AppColor.black,
                     ),
                     Spacer(),
                     InkWell(
                       onTap: () {
-                       // Get.to(() => LoanDetail());
+                        Get.to(() => RecevingLoan());
                       },
                       child: Icon(
                         Icons.arrow_forward_ios_rounded,
-                        size: 25.sp,
+                        size: 28.sp,
                         color: AppColor.black,
                       ),
                     ),
@@ -80,7 +81,7 @@ class _DetailLaonState extends State<DetailLaon> {
                   children: [
                     Icon(
                       Icons.watch_later_rounded,
-                      size: 25.sp,
+                      size: 28.sp,
                       color: AppColor.black,
                     ),
                     CustomSizeBox(
@@ -89,7 +90,7 @@ class _DetailLaonState extends State<DetailLaon> {
                     CustomText(
                       text: AppText.Mounth_term,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16.sp,
+                      fontSize: 20.sp,
                       color: AppColor.black,
                     ),
                     CustomSizeBox(
@@ -98,7 +99,7 @@ class _DetailLaonState extends State<DetailLaon> {
                     CustomText(
                       text: AppText.Mounth_left,
                       fontWeight: FontWeight.w500,
-                      fontSize: 14.sp,
+                      fontSize: 12.sp,
                       color: AppColor.gray,
                     ),
                   ],
@@ -110,7 +111,7 @@ class _DetailLaonState extends State<DetailLaon> {
                   children: [
                     Icon(
                       Icons.percent,
-                      size: 25.sp,
+                      size: 28.sp,
                       color: AppColor.black,
                     ),
                     CustomSizeBox(
@@ -119,7 +120,7 @@ class _DetailLaonState extends State<DetailLaon> {
                     CustomText(
                       text: AppText.Interset_Rate,
                       fontWeight: FontWeight.w700,
-                      fontSize: 16.sp,
+                      fontSize: 20.sp,
                       color: AppColor.black,
                     ),
                   ],
@@ -128,17 +129,17 @@ class _DetailLaonState extends State<DetailLaon> {
                   height: 50.h,
                 ),
                 LinearProgressIndicator(
-                  color: AppColor.button2,
+                  color: AppColor.button,
                   backgroundColor: AppColor.gray,
                   borderRadius: BorderRadius.circular(10.r),
                   value: 0.7,
-                  minHeight: 4,
+                  minHeight: 5,
                 ),
                 CustomSizeBox(
                   height: 16.h,
                 ),
                 Container(
-                    height: 100,
+                    height: 103,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.r),
@@ -158,28 +159,28 @@ class _DetailLaonState extends State<DetailLaon> {
                           CustomText(
                             text: AppText.Amount_left_to_pay,
                             fontWeight: FontWeight.w700,
-                            fontSize: 16.sp,
+                            fontSize: 20.sp,
                             color: AppColor.black,
                           ),
-                          CustomSizeBox(height: 20.h,),
+                          CustomSizeBox(height: 10.h,),
                           CustomText(
                             text: '\$250',
-                            fontWeight: FontWeight.w700,
-                            fontSize: 30.sp,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 32.sp,
                             color: AppColor.black,
                           ),
                         ],
                       ),
                     )
                 ),
-                CustomSizeBox(height: 30.h,),
+                CustomSizeBox(height: 34.h,),
                 CustomButton(onPressed: (){
                   showDialog(context: context, builder: (context) {
                     return AddMoney();
                   },);
                 }, text: AppText.Add_Money),
                 
-                CustomSizeBox(height: 40.h,),
+                CustomSizeBox(height: 34.h,),
                 CustomText(
                   text: AppText.Payment_BreakDown,
                   fontWeight: FontWeight.w700,
@@ -193,7 +194,7 @@ class _DetailLaonState extends State<DetailLaon> {
                     CustomText(
                       text: '\$400',
                       fontWeight: FontWeight.w700,
-                      fontSize: 30.sp,
+                      fontSize: 32.sp,
                       color: AppColor.black,
                     ),
                     Column(
@@ -202,14 +203,14 @@ class _DetailLaonState extends State<DetailLaon> {
                         CustomText(
                           text: '11:30 PM',
                           fontWeight: FontWeight.w400,
-                          fontSize: 14.sp,
+                          fontSize: 12.sp,
                           color: AppColor.black,
                         ),
                         CustomSizeBox(height: 10.h,),
                         CustomText(
                           text: 'Mar 20th 2023',
                           fontWeight: FontWeight.w400,
-                          fontSize: 14.sp,
+                          fontSize: 12.sp,
                           color: AppColor.black,
                         ),
                       ],
@@ -228,7 +229,7 @@ class _DetailLaonState extends State<DetailLaon> {
                     CustomText(
                       text: '\$400',
                       fontWeight: FontWeight.w700,
-                      fontSize: 30.sp,
+                      fontSize: 32.sp,
                       color: AppColor.black,
                     ),
                     Column(
@@ -237,14 +238,14 @@ class _DetailLaonState extends State<DetailLaon> {
                         CustomText(
                           text: '11:30 PM',
                           fontWeight: FontWeight.w400,
-                          fontSize: 14.sp,
+                          fontSize: 12.sp,
                           color: AppColor.black,
                         ),
                         CustomSizeBox(height: 10.h,),
                         CustomText(
                           text: 'Mar 20th 2023',
                           fontWeight: FontWeight.w400,
-                          fontSize: 14.sp,
+                          fontSize: 12.sp,
                           color: AppColor.black,
                         ),
                       ],

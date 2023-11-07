@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mtp/Utils/AppColor.dart';
 class CustomTextFromField extends StatelessWidget {
-   CustomTextFromField({super.key,this.hintText,required this.controller,this.suffixIcon,});
+   CustomTextFromField({super.key,this.hintText,required this.controller,this.suffixIcon,this.suffix});
   String? hintText;
   TextEditingController controller;
    Widget? suffixIcon;
+   Widget? suffix;
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
+      height: 80.h,
       width: double.infinity,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
@@ -34,9 +35,12 @@ class CustomTextFromField extends StatelessWidget {
               border: InputBorder.none,
               hintText: hintText,
               hintStyle: TextStyle(
-                  color: AppColor.gray
+                  color: AppColor.gray,
+                fontFamily: "InriaSerif"
               ),
-              suffixIcon:suffixIcon
+              suffixIcon:suffixIcon,
+              suffix: suffix,
+              focusColor: AppColor.green10,
             ),
           ),
         ),

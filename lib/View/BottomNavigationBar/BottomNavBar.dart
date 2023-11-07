@@ -16,32 +16,34 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int current = 0;
   List screens = [YourMoney(),
     LoanDue(),
+    Profile(),
     YourNotification(),
-    Profile()
   ];
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColor.white,
-      body: screens[current],
-      bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: AppColor.white,
-          selectedItemColor: AppColor.button2,
-          unselectedItemColor: AppColor.gray,
-          showUnselectedLabels: false,
-          showSelectedLabels: false,
-          currentIndex: current,
-          elevation: 10,
-          onTap: (value) {
-            setState(() {
-              current = value;
-            });
-          },
-          items: [
-        BottomNavigationBarItem(icon: Icon(Icons.attach_money_outlined,),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.monetization_on_sharp,),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.notifications,),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.person,),label: ''),
-      ]),
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: AppColor.white,
+        body: screens[current],
+        bottomNavigationBar: BottomNavigationBar(
+            backgroundColor: AppColor.white,
+            selectedItemColor: AppColor.button,
+            unselectedItemColor: AppColor.gray,
+            showUnselectedLabels: false,
+            showSelectedLabels: false,
+            currentIndex: current,
+            elevation: 10,
+            onTap: (value) {
+              setState(() {
+                current = value;
+              });
+            },
+            items: [
+          BottomNavigationBarItem(icon: Icon(Icons.request_page,),label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.maps_home_work_outlined,),label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined,),label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.notifications_none,),label: ''),
+        ]),
+      ),
     );
   }
 }

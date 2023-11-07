@@ -26,45 +26,45 @@ class _YourMoneyState extends State<YourMoney> {
           title: CustomText(
             text: AppText.Your_Money,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
-          actions: [
-            Row(
-              children: [
-                InkWell(
-                  onTap: (){
-                    Get.to(()=>SendLoan());
-                  },
-                  child: Container(
-                    height: 35.h,
-                    width: 35.w,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5.r),
-                        border: Border.all(color: AppColor.black, width: 3.w)),
-                    child: Center(
-                      child: Icon(
-                        Icons.add,
-                        color: AppColor.black,
-                        size: 20.sp,
-                      ),
-                    ),
-                  ),
-                ),
-                CustomSizeBox(
-                  width: 20.w,
-                ),
-                Icon(
-                  Icons.search,
-                  color: AppColor.black,
-                ),
-                CustomSizeBox(
-                  width: 20.w,
-                ),
-              ],
-            ),
-          ],
+          // actions: [
+          //   Row(
+          //     children: [
+          //       InkWell(
+          //         onTap: (){
+          //           Get.to(()=>SendLoan());
+          //         },
+          //         child: Container(
+          //           height: 35.h,
+          //           width: 35.w,
+          //           decoration: BoxDecoration(
+          //               borderRadius: BorderRadius.circular(5.r),
+          //               border: Border.all(color: AppColor.black, width: 3.w)),
+          //           child: Center(
+          //             child: Icon(
+          //               Icons.add,
+          //               color: AppColor.black,
+          //               size: 20.sp,
+          //             ),
+          //           ),
+          //         ),
+          //       ),
+          //       CustomSizeBox(
+          //         width: 20.w,
+          //       ),
+          //       Icon(
+          //         Icons.search,
+          //         color: AppColor.black,
+          //       ),
+          //       CustomSizeBox(
+          //         width: 20.w,
+          //       ),
+          //     ],
+          //   ),
+          // ],
         ),
         body:Column(
           children: [
@@ -116,21 +116,21 @@ class _YourMoneyState extends State<YourMoney> {
                               children: [
                                 Icon(
                                   Icons.watch_later_rounded,
-                                  size: 25.sp,
+                                  size: 28.sp,
                                   color: AppColor.black,
                                 ),
                                 CustomSizeBox(width: 20.w,),
                                 CustomText(
                                   text: AppText.Mounth_term,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16.sp,
+                                  fontSize: 20.sp,
                                   color: AppColor.black,
                                 ),
                                 CustomSizeBox(width: 20.w,),
                                 CustomText(
                                   text: AppText.Mounth_left,
                                   fontWeight: FontWeight.w500,
-                                  fontSize: 14.sp,
+                                  fontSize: 12.sp,
                                   color: AppColor.gray,
                                 ),
                               ],
@@ -140,14 +140,14 @@ class _YourMoneyState extends State<YourMoney> {
                               children: [
                                 Icon(
                                   Icons.percent,
-                                  size: 25.sp,
+                                  size: 28.sp,
                                   color: AppColor.black,
                                 ),
                                 CustomSizeBox(width: 20.w,),
                                 CustomText(
                                   text: AppText.Interset_Rate,
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 16.sp,
+                                  fontSize: 20.sp,
                                   color: AppColor.black,
                                 ),
 
@@ -155,7 +155,7 @@ class _YourMoneyState extends State<YourMoney> {
                             ),
                             CustomSizeBox(height: 16.h,),
                             LinearProgressIndicator(
-                              color: AppColor.button2,
+                              color: Colors.yellow,
                               backgroundColor: AppColor.gray,
                               borderRadius: BorderRadius.circular(10.r),
                               value: 0.7,

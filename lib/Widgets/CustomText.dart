@@ -21,6 +21,7 @@ class CustomText extends StatelessWidget {
         color: color,
         fontSize: fontSize,
         fontWeight: fontWeight,
+        fontFamily: 'InriaSerif'
       ),
       textAlign: textAlign,
     );

@@ -29,7 +29,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
           title: CustomText(
             text: AppText.Payment_Method,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
@@ -41,6 +41,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
               child: Icon(
                 Icons.arrow_back_ios,
                 color: AppColor.black,
+                size: 24.sp,
               )),
         ),
         backgroundColor: AppColor.white,
@@ -51,7 +52,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
               Column(
                 children: [
                   CustomSizeBox(
-                    height: 50.h,
+                    height: 48.h,
                   ),
                   InkWell(
                     onTap: () {
@@ -81,8 +82,8 @@ class _PaymentMethodState extends State<PaymentMethod> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
-                          height: 40.h,
-                          width: 40.w,
+                          height: 50.h,
+                          width: 50.w,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5.r),
                               border: Border.all(
@@ -99,8 +100,8 @@ class _PaymentMethodState extends State<PaymentMethod> {
                         ),
                         CustomText(
                           text: AppText.Add_a_bank_or_card,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20.sp,
                           color: AppColor.black,
                         ),
                       ],
@@ -116,8 +117,8 @@ class _PaymentMethodState extends State<PaymentMethod> {
                   children: [
                     CustomText(
                       text: AppText.Skip_for_now,
-                      fontWeight: FontWeight.w700,
-                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 20.sp,
                       color: AppColor.black,
                     ),
                     CustomSizeBox(

@@ -27,7 +27,7 @@ class _SendLoanState extends State<SendLoan> {
           title: CustomText(
             text: AppText.Sending_Loan,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
@@ -53,7 +53,7 @@ class _SendLoanState extends State<SendLoan> {
                       text: AppText
                           .Enter_the_detail_of_the_loan_you_want_to_provide,
                       fontWeight: FontWeight.w400,
-                      fontSize: 14.sp,
+                      fontSize: 16.sp,
                       color: AppColor.black,
                       textAlign: TextAlign.center,
                     ),
@@ -94,7 +94,7 @@ class _SendLoanState extends State<SendLoan> {
                             text: AppText.Loan_Duration,
                             fontWeight: FontWeight.w800,
                             fontSize: 14.sp,
-                            color: AppColor.button2,
+                            color: AppColor.button,
                           ),
                           ExpansionTile(
                             backgroundColor: AppColor.white,
@@ -126,8 +126,8 @@ class _SendLoanState extends State<SendLoan> {
                         CustomText(
                           text: 'Interest Rate',
                           fontWeight: FontWeight.w800,
-                          fontSize: 14.sp,
-                          color: AppColor.button2,
+                          fontSize: 20.sp,
+                          color: AppColor.button,
                         ),
                         CustomSizeBox(
                           height: 20.h,

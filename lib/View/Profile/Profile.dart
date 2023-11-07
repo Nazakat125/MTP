@@ -62,16 +62,16 @@ class _ProfileState extends State<Profile> {
                           color: AppColor.shadow,
                         ),
                         CustomSizeBox(
-                          height: 20.h,
+                          height: 10.h,
                         ),
                         CustomText(
                           text: '\$1000.00',
                           fontWeight: FontWeight.w700,
-                          fontSize: 25.sp,
+                          fontSize: 32.sp,
                           color: AppColor.black,
                         ),
                         CustomSizeBox(
-                          height: 20.h,
+                          height: 10.h,
                         ),
                         CustomButton(
                             onPressed: () {
@@ -86,7 +86,7 @@ class _ProfileState extends State<Profile> {
                                 },
                               );
                             },
-                            text: AppText.Transfer_Blance),
+                            text: AppText.Transfer_Blance,height: 50.h,),
                       ],
                     ),
                   )),
@@ -96,7 +96,7 @@ class _ProfileState extends State<Profile> {
               CustomText(
                 text: AppText.Account,
                 fontWeight: FontWeight.w700,
-                fontSize: 22.sp,
+                fontSize: 20.sp,
                 color: AppColor.black,
               ),
               CustomSizeBox(
@@ -104,26 +104,26 @@ class _ProfileState extends State<Profile> {
               ),
               CustomRow(text: AppText.Membership, onTap: () {}),
               CustomSizeBox(
-                height: 5,
+                height: 14.h,
               ),
               CustomRow(text: AppText.Payments_link, onTap: () {
                 Get.to(()=>PaymentInfo());
               }),
               CustomSizeBox(
-                height: 5,
+                height: 14.h,
               ),
               CustomRow(text: AppText.Change_Password, onTap: () {}),
               CustomSizeBox(
-                height: 5,
+                height: 14.h,
               ),
               CustomRow(text: AppText.Notification_Setting, onTap: () {}),
               CustomSizeBox(
-                height: 20,
+                height: 14.h,
               ),
               CustomText(
                 text: AppText.Others,
                 fontWeight: FontWeight.w700,
-                fontSize: 22.sp,
+                fontSize: 20.sp,
                 color: AppColor.black,
               ),
               CustomSizeBox(
@@ -131,11 +131,11 @@ class _ProfileState extends State<Profile> {
               ),
               CustomRow(text: AppText.Privacy_Policy, onTap: () {}),
               CustomSizeBox(
-                height: 5,
+                height: 14.h,
               ),
               CustomRow(text: AppText.Term_Condition, onTap: () {}),
               CustomSizeBox(
-                height: 5,
+                height: 14.h,
               ),
               CustomRow(text: AppText.Log_Out, onTap: () {}),
             ],

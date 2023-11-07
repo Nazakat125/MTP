@@ -23,13 +23,13 @@ class AddMoney extends StatelessWidget {
           children: [
             CustomText(
               text: AppText.Add_Money,
-              fontSize: 24.sp,
+              fontSize: 28.sp,
               color: AppColor.black,
               fontWeight: FontWeight.w700,
             ),
             CustomSizeBox(height: 40.h,),
             Container(
-                height: 120,
+                height: 110.h,
                 width: double.infinity,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
@@ -43,23 +43,22 @@ class AddMoney extends StatelessWidget {
                           offset: Offset(2, 4)),
                     ]),
                 child: Padding(
-                  padding:  EdgeInsets.symmetric(vertical: 16.h,horizontal: 40.w),
+                  padding:  EdgeInsets.symmetric(vertical: 10.h,horizontal: 40.w),
                   child: Column(
                     children: [
                       CustomText(
                         text: AppText.Amount,
                         fontWeight: FontWeight.w700,
-                        fontSize: 16.sp,
+                        fontSize: 20.sp,
                         color: AppColor.black,
                       ),
-                      CustomSizeBox(height: 20.h,),
                       TextFormField(
                         textAlign: TextAlign.center,
                         keyboardType: TextInputType.number,
                         maxLines: 1,
                         style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 30.sp,
+                            fontSize: 32.sp,
                             color: AppColor.black
                         ),
                         decoration: InputDecoration(
@@ -67,7 +66,9 @@ class AddMoney extends StatelessWidget {
                           hintText: '\$00.00',
                           hintStyle: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 30.sp,
+                            fontSize: 32
+
+                                .sp,
                             color: AppColor.gray
                           ),
                         ),

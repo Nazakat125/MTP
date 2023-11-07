@@ -8,7 +8,7 @@ class CustomButton extends StatelessWidget {
       required this.onPressed,
       required this.text,
       this.width = double.infinity,
-      this.height = 50,
+      this.height = 60,
         this.fontSize = 20
 
       });
@@ -27,14 +27,7 @@ class CustomButton extends StatelessWidget {
         width: width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
-          gradient: LinearGradient(
-            colors: [
-              AppColor.button1,
-              AppColor.button2,
-            ],
-            begin: Alignment.bottomLeft,
-            end: Alignment.bottomRight,
-          ),
+         color:       AppColor.button,
         ),
         child: Center(
           child: Text(
@@ -43,6 +36,7 @@ class CustomButton extends StatelessWidget {
               fontSize: fontSize,
               fontWeight: FontWeight.w700,
               color: AppColor.white,
+              fontFamily: "InriaSerif"
             ),
           ),
         ),

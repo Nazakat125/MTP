@@ -21,6 +21,7 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: AppColor.white,
         body: Padding(
           padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 24.w),
@@ -29,18 +30,18 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
               Column(
                 children: [
                   CustomSizeBox(
-                    height: 100.h,
+                    height: 94.h,
                   ),
                   Center(
                     child: CustomText(
                       text: AppText.Two_Step_Verification,
                       fontWeight: FontWeight.w700,
-                      fontSize: 24.sp,
+                      fontSize: 32.sp,
                       color: AppColor.black,
                     ),
                   ),
                   CustomSizeBox(
-                    height: 50.h,
+                    height: 14.h,
                   ),
                   CustomText(
                     text: AppText.Verify_your_email_with_code_sent_to_you,
@@ -50,7 +51,7 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                     textAlign: TextAlign.center,
                   ),
                   CustomSizeBox(
-                    height: 80.h,
+                    height: 125.h,
                   ),
                   Pinput(
                     length: 4,
@@ -81,7 +82,7 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                       height: 60,
                       decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
-                          color: AppColor.button2,
+                          color: AppColor.button,
                           borderRadius: BorderRadius.circular(15.r),
                           border:
                               Border.all(color: Colors.transparent, width: 2.w),
@@ -119,7 +120,7 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                     ),
                   ),
                   CustomSizeBox(
-                    height: 30.h,
+                    height: 25.h,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -127,19 +128,16 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                       CustomText(
                         text: AppText.I_did_receive_the_code,
                         fontWeight: FontWeight.w500,
-                        fontSize: 16.sp,
+                        fontSize: 20.sp,
                         color: AppColor.black,
                       ),
                       CustomText(
                         text: AppText.Resend,
                         fontWeight: FontWeight.w700,
-                        fontSize: 16.sp,
+                        fontSize: 20.sp,
                         color: AppColor.black,
                       ),
                     ],
-                  ),
-                  CustomSizeBox(
-                    height: 80.h,
                   ),
                 ],
               ),

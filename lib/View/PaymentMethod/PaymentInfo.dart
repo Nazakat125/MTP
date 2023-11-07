@@ -32,7 +32,7 @@ class _PaymentInfoState extends State<PaymentInfo> {
           title: CustomText(
             text: AppText.Payment_info,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
@@ -59,6 +59,7 @@ class _PaymentInfoState extends State<PaymentInfo> {
                     children: [
                       Checkbox(
                         value: checkBox,
+                        activeColor: AppColor.button,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.r),
                         ),
@@ -123,8 +124,8 @@ class _PaymentInfoState extends State<PaymentInfo> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            height: 40.h,
-                            width: 40.w,
+                            height: 50.h,
+                            width: 50.w,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(5.r),
                                 border: Border.all(
@@ -141,8 +142,8 @@ class _PaymentInfoState extends State<PaymentInfo> {
                           ),
                           CustomText(
                             text: AppText.Add_a_bank_or_card,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16.sp,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20.sp,
                             color: AppColor.black,
                           ),
                         ],

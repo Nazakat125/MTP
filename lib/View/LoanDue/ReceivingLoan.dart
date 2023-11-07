@@ -27,7 +27,7 @@ class _RecevingLoanState extends State<RecevingLoan> {
           title: CustomText(
             text: AppText.Receving_Loan,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
@@ -42,7 +42,7 @@ class _RecevingLoanState extends State<RecevingLoan> {
               )),
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 24.w),
+          padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 24.w),
           child: Stack(
             children: [
               Column(
@@ -52,8 +52,8 @@ class _RecevingLoanState extends State<RecevingLoan> {
                     child: CustomText(
                       text: AppText
                           .Enter_the_detail_of_the_loan_you_want_to_recevie,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 16.sp,
                       color: AppColor.black,
                       textAlign: TextAlign.center,
                     ),
@@ -94,7 +94,7 @@ class _RecevingLoanState extends State<RecevingLoan> {
                             text: AppText.Loan_Duration,
                             fontWeight: FontWeight.w800,
                             fontSize: 14.sp,
-                            color: AppColor.button2,
+                            color: AppColor.button,
                           ),
                           ExpansionTile(
                             backgroundColor: AppColor.white,
@@ -125,17 +125,17 @@ class _RecevingLoanState extends State<RecevingLoan> {
                       children: [
                         CustomText(
                           text: 'Interest Rate',
-                          fontWeight: FontWeight.w800,
-                          fontSize: 14.sp,
-                          color: AppColor.button2,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20.sp,
+                          color: AppColor.button,
                         ),
                         CustomSizeBox(
                           height: 20.h,
                         ),
                         CustomText(
                           text: "3% Interest Rate",
-                          fontWeight: FontWeight.w800,
-                          fontSize: 18.sp,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20.sp,
                           color: AppColor.black,
                         ),
                       ],

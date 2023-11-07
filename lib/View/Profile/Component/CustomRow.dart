@@ -12,14 +12,14 @@ class CustomRow extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        height: 60.h,
+        height: 46.h,
         color: AppColor.white,
         child: Padding(
           padding:  EdgeInsets.symmetric(horizontal: 20.w),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-            CustomText(text:text,color: AppColor.black,fontWeight: FontWeight.w700,fontSize: 18.sp,),
+            CustomText(text:text,color: AppColor.black,fontWeight: FontWeight.w700,fontSize: 19.sp,),
               Icon(Icons.arrow_forward_ios_rounded,color: AppColor.black,)
             ],
           ),

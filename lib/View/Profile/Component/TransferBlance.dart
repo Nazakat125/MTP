@@ -29,7 +29,7 @@ class _TransferBlanceState extends State<TransferBlance> {
               child: CustomText(
                 text: AppText.Transfer_Blance,
                 fontWeight: FontWeight.w700,
-                fontSize: 24.sp,
+                fontSize: 32.sp,
                 color: AppColor.black,
               ),
             ),
@@ -38,7 +38,7 @@ class _TransferBlanceState extends State<TransferBlance> {
 
               child: CustomText(
                 text: AppText.Enter_the_Amount_of_money_that_you_want_to_transfer,
-                fontWeight: FontWeight.w400,
+                fontWeight: FontWeight.w500,
                 fontSize: 16.sp,
                 color: AppColor.black,
                 textAlign: TextAlign.center,
@@ -46,7 +46,7 @@ class _TransferBlanceState extends State<TransferBlance> {
             ),
             CustomSizeBox(height: 30.h,),
             Container(
-                height: 130,
+                height: 151.h,
                 width: double.infinity,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.r),
@@ -68,7 +68,7 @@ class _TransferBlanceState extends State<TransferBlance> {
                       CustomText(
                         text: '\$1000.00',
                         fontWeight: FontWeight.w700,
-                        fontSize: 40.sp,
+                        fontSize: 32.sp,
                         color: AppColor.black,
                       ),
                       CustomSizeBox(
@@ -77,7 +77,7 @@ class _TransferBlanceState extends State<TransferBlance> {
                       CustomText(
                         text: AppText.Transfer_Amount,
                         fontWeight: FontWeight.w700,
-                        fontSize: 16.sp,
+                        fontSize: 20.sp,
                         color: AppColor.black,
                       ),
 
@@ -93,7 +93,7 @@ class _TransferBlanceState extends State<TransferBlance> {
             ),
             CustomSizeBox(height: 20.h,),
             Container(
-              height: 100.h,
+              height: 104.h,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.r),
@@ -117,8 +117,8 @@ class _TransferBlanceState extends State<TransferBlance> {
                   ),
                   CustomImage(
                     image: AppImages.visa,
-                    height: 100.h,
-                    width: 130.w,
+                    height: 90.h,
+                    width: 120.w,
                   ),
                   CustomSizeBox(
                     width: 20.w,

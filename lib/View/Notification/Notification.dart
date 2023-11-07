@@ -14,9 +14,9 @@ class YourNotification extends StatefulWidget {
 
 class _YourNotification extends State<YourNotification> {
   List items = [
-    [AppColor.button2,AppText.Received,AppColor.button2,],
+    [AppColor.button,AppText.Received,AppColor.button,],
     [AppColor.red,AppText.Send,AppColor.red,],
-    [AppColor.button2,AppText.Received,AppColor.button2,],
+    [AppColor.button,AppText.Received,AppColor.button,],
     [AppColor.red,AppText.Send,AppColor.red,],
   ];
   @override
@@ -28,7 +28,7 @@ class _YourNotification extends State<YourNotification> {
         title: CustomText(
           text: AppText.Notification,
           fontWeight: FontWeight.w700,
-          fontSize: 22.sp,
+          fontSize: 32.sp,
           color: AppColor.black,
         ),
         elevation: 0,
@@ -40,6 +40,7 @@ class _YourNotification extends State<YourNotification> {
             child: Icon(
               Icons.search_rounded,
               color: AppColor.black,
+              size: 23.sp,
             ),
           ),
           CustomSizeBox(width: 30.w,),
@@ -65,13 +66,13 @@ class _YourNotification extends State<YourNotification> {
                           CustomText(
                             text: AppText.Loan_Payment,
                             fontWeight: FontWeight.w500,
-                            fontSize: 18.sp,
+                            fontSize: 20.sp,
                             color: AppColor.black,
                           ),
                           CustomText(
                             text: '\$100.00',
                             fontWeight: FontWeight.w700,
-                            fontSize: 30.sp,
+                            fontSize: 32.sp,
                             color: items[index][0],
                           ),
                         ],
@@ -83,8 +84,8 @@ class _YourNotification extends State<YourNotification> {
                           CustomText(
                             text: items[index][1],
                             fontWeight: FontWeight.w400,
-                            fontSize: 14.sp,
-                            color: AppColor.button2,
+                            fontSize: 20.sp,
+                            color: AppColor.button,
                           ),
                           CustomText(
                             text: '3m ago',
@@ -105,7 +106,7 @@ class _YourNotification extends State<YourNotification> {
                               CustomText(
                                 text: '\$1000.00',
                                 fontWeight: FontWeight.w400,
-                                fontSize: 14.sp,
+                                fontSize: 12.sp,
                                 color: AppColor.black,
                               ),
 
@@ -118,7 +119,7 @@ class _YourNotification extends State<YourNotification> {
                               CustomText(
                                 text: AppText.Mounth_term,
                                 fontWeight: FontWeight.w400,
-                                fontSize: 14.sp,
+                                fontSize: 12.sp,
                                 color: AppColor.black,
                               ),
 
@@ -131,7 +132,7 @@ class _YourNotification extends State<YourNotification> {
                               CustomText(
                                 text: '5%',
                                 fontWeight: FontWeight.w400,
-                                fontSize: 14.sp,
+                                fontSize: 12.sp,
                                 color: AppColor.black,
                               ),
 

@@ -12,7 +12,7 @@ class CustomLabelTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 101.h,
       width: width,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.r),
@@ -36,8 +36,8 @@ class CustomLabelTextField extends StatelessWidget {
             CustomText(
               text: label,
               fontWeight: FontWeight.w800,
-              fontSize: 14.sp,
-              color: AppColor.button2,
+              fontSize: 20.sp,
+              color: AppColor.button,
             ),
 
             TextFormField(
@@ -47,7 +47,8 @@ class CustomLabelTextField extends StatelessWidget {
                   border: InputBorder.none,
                   hintText: hintText,
                   hintStyle: TextStyle(
-                      color: AppColor.gray
+                      color: AppColor.gray,
+                    fontFamily: "InriaSerif"
                   ),
                   suffixIcon:suffixIcon
               ),

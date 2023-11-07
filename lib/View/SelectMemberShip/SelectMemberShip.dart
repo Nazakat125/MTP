@@ -25,11 +25,10 @@ class _SelectMemberShipState extends State<SelectMemberShip> {
           title: CustomText(
             text: AppText.Select_Membership,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 28.sp,
             color: AppColor.black,
           ),
           elevation: 0,
-          centerTitle: true,
           leading: InkWell(
               onTap: () {
                 Get.back();
@@ -49,13 +48,13 @@ class _SelectMemberShipState extends State<SelectMemberShip> {
                 children: [
                  Expanded(
                    child: ListView.builder(
-                     itemCount: 4,
+                     itemCount: 2,
                      itemBuilder: (context, index) {
                      return  Padding(
                        padding:  EdgeInsets.only(bottom: 30.h),
                        child: Container(
-                         height: 250.h,
-                         width: double.infinity,
+                         height: 192.h,
+                         width: 327,
                          decoration: BoxDecoration(
                              borderRadius: BorderRadius.circular(10.r),
                              color: AppColor.white,
@@ -74,9 +73,9 @@ class _SelectMemberShipState extends State<SelectMemberShip> {
                              children: [
                                CustomText(
                                  text: AppText.Membership_Tier_Name,
-                                 fontWeight: FontWeight.w700,
-                                 fontSize: 22.sp,
-                                 color: AppColor.button2,
+                                 fontWeight: FontWeight.w500,
+                                 fontSize: 20.sp,
+                                 color: AppColor.button,
                                ),
                                CustomSizeBox(height: 10.h,),
                                RichText(text: TextSpan(
@@ -85,7 +84,7 @@ class _SelectMemberShipState extends State<SelectMemberShip> {
                                          text: '\$00.00/',
                                          style: TextStyle(
                                            fontWeight: FontWeight.w700,
-                                           fontSize: 22.sp,
+                                           fontSize: 28.sp,
                                            color: AppColor.black,
                                          )
                                      ),
@@ -93,7 +92,7 @@ class _SelectMemberShipState extends State<SelectMemberShip> {
                                          text: AppText.Mounth,
                                          style: TextStyle(
                                            fontWeight: FontWeight.w500,
-                                           fontSize: 14.sp,
+                                           fontSize: 16.sp,
                                            color: AppColor.gray,
                                          )
                                      ),
@@ -103,22 +102,22 @@ class _SelectMemberShipState extends State<SelectMemberShip> {
                                CustomSizeBox(height: 15.h,),
                                CustomText(
                                  text: AppText.Lorem_ipsum_dolor_sit,
-                                 fontWeight: FontWeight.w400,
-                                 fontSize: 14.sp,
+                                 fontWeight: FontWeight.w500,
+                                 fontSize: 12.sp,
                                  color: AppColor.black,
                                ),
                                CustomSizeBox(height: 15.h,),
                                CustomText(
                                  text: AppText.Lorem_ipsum_dolor_sit,
-                                 fontWeight: FontWeight.w400,
-                                 fontSize: 14.sp,
+                                 fontWeight: FontWeight.w500,
+                                 fontSize: 12.sp,
                                  color: AppColor.black,
                                ),
                                CustomSizeBox(height: 15.h,),
                                CustomText(
                                  text: AppText.Lorem_ipsum_dolor_sit,
-                                 fontWeight: FontWeight.w400,
-                                 fontSize: 14.sp,
+                                 fontWeight: FontWeight.w500,
+                                 fontSize: 12.sp,
                                  color: AppColor.black,
                                ),
 

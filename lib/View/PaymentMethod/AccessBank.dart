@@ -44,49 +44,29 @@ class _AccessBankState extends State<AccessBank> {
                   CustomImage(
                       image: AppImages.link_bank,
                       width: double.infinity,
-                      height: 80.h,
-                      fit: BoxFit.cover),
+                      height: 108.h,),
                   CustomSizeBox(
-                    height: 50.h,
+                    height: 25.h,
                   ),
                   CustomText(
                     text: AppText.AccessMTP_uses_Plaid_to_link_your_bank,
-                    fontSize: 24.sp,
+                    fontSize: 20.sp,
                     fontWeight: FontWeight.w700,
                     color: AppColor.black,
                     textAlign: TextAlign.center,
                   ),
                   CustomSizeBox(
-                    height: 70.h,
+                    height: 25.h,
                   ),
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(vertical: 20.h, horizontal: 20.w),
+                        EdgeInsets.symmetric(vertical: 20.h, horizontal: 10.w),
                     child: Column(
                       children: [
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              height: 40.h,
-                              width: 40.w,
-                              decoration: BoxDecoration(
-                                  color: AppColor.white,
-                                  shape: BoxShape.circle,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: AppColor.shadow,
-                                      blurRadius: 20,
-                                      spreadRadius: 4,
-                                    )
-                                  ]),
-                              child: Center(
-                                  child: Icon(
-                                Icons.check_rounded,
-                                size: 30.sp,
-                                color: AppColor.button2,
-                              )),
-                            ),
+                            CustomImage(image: AppImages.check,height: 28.h,width: 28.w,),
                             CustomSizeBox(
                               width: 30.w,
                             ),
@@ -119,26 +99,7 @@ class _AccessBankState extends State<AccessBank> {
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              height: 40.h,
-                              width: 40.w,
-                              decoration: BoxDecoration(
-                                  color: AppColor.white,
-                                  shape: BoxShape.circle,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: AppColor.shadow,
-                                      blurRadius: 20,
-                                      spreadRadius: 4,
-                                    )
-                                  ]),
-                              child: Center(
-                                  child: Icon(
-                                Icons.check_rounded,
-                                size: 30.sp,
-                                color: AppColor.button2,
-                              )),
-                            ),
+                            CustomImage(image: AppImages.check,height: 28.h,width: 28.w,),
                             CustomSizeBox(
                               width: 30.w,
                             ),
@@ -154,12 +115,15 @@ class _AccessBankState extends State<AccessBank> {
                                 CustomSizeBox(
                                   height: 20.h,
                                 ),
-                                CustomText(
-                                  text: AppText
-                                      .Your_credentials_will_never_be_made_accessible_to_this_application,
-                                  fontSize: 14.sp,
-                                  fontWeight: FontWeight.w400,
-                                  color: AppColor.black,
+                                SizedBox(
+                                  width: 200.w,
+                                  child: CustomText(
+                                    text: AppText
+                                        .Your_credentials_will_never_be_made_accessible_to_this_application,
+                                    fontSize: 14.sp,
+                                    fontWeight: FontWeight.w400,
+                                    color: AppColor.black,
+                                  ),
                                 ),
                               ],
                             ),

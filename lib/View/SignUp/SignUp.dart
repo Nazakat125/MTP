@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:mtp/Utils/AppColor.dart';
 import 'package:mtp/Utils/AppText.dart';
+import 'package:mtp/View/LogIn/LogIn.dart';
 import 'package:mtp/View/SignUp/TwoStepVarification.dart';
 import 'package:mtp/Widgets/CustomButton.dart';
 import 'package:mtp/Widgets/CustomEditText.dart';
@@ -31,18 +32,18 @@ class _SignUpState extends State<SignUp> {
             child: Column(
               children: [
                 CustomSizeBox(
-                  height: 100.h,
+                  height: 94.h,
                 ),
                 Center(
                   child: CustomText(
                     text: AppText.Sign_Up,
                     fontWeight: FontWeight.w700,
-                    fontSize: 24.sp,
+                    fontSize: 32.sp,
                     color: AppColor.black,
                   ),
                 ),
                 CustomSizeBox(
-                  height: 50.h,
+                  height: 14.h,
                 ),
                 CustomText(
                   text: AppText.Enter_your_detail_to_ncreate_your_account,
@@ -52,15 +53,25 @@ class _SignUpState extends State<SignUp> {
                   textAlign: TextAlign.center,
                 ),
                 CustomSizeBox(
-                  height: 50.h,
+                  height: 101.h,
                 ),
                 CustomTextFromField(
                   controller: emailController,
                   hintText: AppText.Email,
-                  suffixIcon:Icon(Icons.check),
+                  suffix: Container(
+                      height: 30.h,
+                      width: 30.w,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle, color: AppColor.darkgreen),
+                      child: Center(
+                          child: Icon(
+                        Icons.check,
+                        color: AppColor.white,
+                        size: 20.sp,
+                      ))),
                 ),
                 CustomSizeBox(
-                  height: 20.h,
+                  height: 15.h,
                 ),
                 CustomTextFromField(
                   controller: passwordController,
@@ -68,7 +79,7 @@ class _SignUpState extends State<SignUp> {
                   suffixIcon: Icon(Icons.visibility),
                 ),
                 CustomSizeBox(
-                  height: 20.h,
+                  height: 14.h,
                 ),
                 CustomTextFromField(
                   controller: re_passwordController,
@@ -76,21 +87,27 @@ class _SignUpState extends State<SignUp> {
                   suffixIcon: Icon(Icons.visibility),
                 ),
                 CustomSizeBox(
-                  height: 100.h,
+                  height: 153.h,
                 ),
-                CustomText(
-                  text: AppText.Switch_to_Login,
-                  fontSize: 16.sp,
-                  color: AppColor.black,
-                  fontWeight: FontWeight.w600,
+                InkWell(
+                  onTap: (){
+                    Get.to(()=>LogIn());
+                  },
+                  child: CustomText(
+                    text: AppText.Switch_to_Login,
+                    fontSize: 20.sp,
+                    color: AppColor.black,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
                 CustomSizeBox(
-                  height: 30.h,
+                  height: 14.h,
                 ),
-                CustomButton(onPressed: (){
-                  Get.to(()=> TwoStepVarification());
-                }, text: AppText.Sign_Up),
-                
+                CustomButton(
+                    onPressed: () {
+                      Get.to(() => TwoStepVarification());
+                    },
+                    text: AppText.Sign_Up),
               ],
             ),
           ),

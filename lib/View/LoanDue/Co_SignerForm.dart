@@ -28,7 +28,7 @@ class _Co_SignerFormState extends State<Co_SignerForm> {
           title: CustomText(
             text: AppText.Co_Signer_Form,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,

@@ -5,6 +5,7 @@ class AppColor{
   static Color gray = Colors.grey;
   static Color red = Colors.red;
   static Color shadow = Color.fromARGB(55, 47, 47, 47);
-  static Color button1 = Color.fromARGB(255, 70, 140, 98);
-  static Color button2 = Color.fromARGB(255, 97, 179, 130);
+  static Color darkgreen = Color(0xff104531);
+  static Color green10 = Color(0xff85BB60);
+  static Color button = Color(0xff51986E);
 }

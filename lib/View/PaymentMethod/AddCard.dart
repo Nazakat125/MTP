@@ -33,7 +33,7 @@ class _AddCardState extends State<AddCard> {
           title: CustomText(
             text: AppText.Add_card_info,
             fontWeight: FontWeight.w700,
-            fontSize: 22.sp,
+            fontSize: 32.sp,
             color: AppColor.black,
           ),
           elevation: 0,
@@ -69,13 +69,13 @@ class _AddCardState extends State<AddCard> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CustomLabelTextField(
-                        width: 180.w,
+                        width: 154.w,
                         controller: expiry,
                         hintText: "mm/yyyy",
                         label: AppText.Expiry_Date,
                       ),
                       CustomLabelTextField(
-                        width: 160.w,
+                        width: 154.w,
                         controller: cvv,
                         hintText: '###',
                         label: AppText.CVV,
