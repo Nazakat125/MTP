@@ -1,6 +1,6 @@
 class AppText{
   static String Sign_Up = 'Sign Up';
-  static String LogIn = 'LogIn';
+  static String LogIn = 'Login';
   static String Enter_your_login_details_to_access_your_account = 'Enter your login details to\naccess your account';
   static String Enter_your_detail_to_ncreate_your_account = 'Enter your detail to\ncreate your account';
   static String Email = 'Email';
@@ -40,7 +40,7 @@ class AppText{
   static String  Payment_info = 'Payment Info';
   static String  Select_Membership = 'Select Membership';
   static String  Membership_Tier_Name = 'Membership Tier Name';
-  static String  Mounth = 'mounth';
+  static String  Mounth = 'month';
   static String  Loan_Amount = 'Loan Amount';
   static String  Amount = 'Amount';
   static String  Dismiss = 'Dismiss';
@@ -48,10 +48,10 @@ class AppText{
   static String  Received = 'Received';
   static String  Send = 'Send';
   static String  Account = 'Account';
-  static String  Avalible_Blance = 'Avalible Blance';
+  static String  Available_Balance = 'Available Balance';
   static String  Transfer_Blance = 'Transfer Blance';
   static String  Persone_Name = 'Person Name';
-  static String  Label_Name = 'Label Name';
+  static String  Label_Name = 'Title Name';
   static String  Add_Money = 'Add  Money';
   static String  ACCESS = 'ACCESS';
   static String  MTP = 'MTP';
@@ -64,16 +64,16 @@ class AppText{
   static String  Sending_Loan = 'Sending Loan';
   static String  Select_Loan_Provider = 'Select Loan Provider';
   static String  Receving_Loan = 'Receving Loan';
-  static String  Loan_Payment = 'Laon Payment';
+  static String  Loan_Payment = 'Loan Payment';
   static String  Co_Signer_Form = 'Co-Signer Form';
-  static String  Mounth_left = '1 mounth left';
-  static String  Mounth_term = '3 mounth term';
+  static String  Mounth_left = '1 month left';
+  static String  Mounth_term = '3 month term';
   static String  Payment_BreakDown = 'Payment BreakDown';
   static String  Amount_left_to_pay = 'Amount left to pay';
   static String  Interset_Rate = '5 % interest rate';
   static String  Lorem_ipsum_dolor_sit = '-   Lorem ipsum dolor sit amet, consectetur';
   static String  Your_credentials_will_never_be_made_accessible_to_this_application = 'Your credentials will never be made accessible to this application';
-  static String  Tranfer_of_your_information_is_encrypted_end_to_end = 'Tranfer of your information is\nencrypted end to end';
+  static String  Tranfer_of_your_information_is_encrypted_end_to_end = 'Transfer of your information is\nencrypted end to end';
   static String  Membership = 'Membership';
   static String  Others = 'Others';
   static String  Confirm_Transfer = 'Confirm Transfer';

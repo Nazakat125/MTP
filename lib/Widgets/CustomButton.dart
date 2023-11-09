@@ -36,7 +36,7 @@ class CustomButton extends StatelessWidget {
               fontSize: fontSize,
               fontWeight: FontWeight.w700,
               color: AppColor.white,
-              fontFamily: "InriaSerif"
+              fontFamily: "inter"
             ),
           ),
         ),

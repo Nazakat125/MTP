@@ -7,12 +7,14 @@ class CustomText extends StatelessWidget {
       this.textAlign,
       this.fontSize,
       this.color,
+        this.fontFamily = 'inter',
       required this.text});
   String text;
   Color? color;
   double? fontSize;
   FontWeight? fontWeight;
   TextAlign? textAlign;
+  String? fontFamily;
   @override
   Widget build(BuildContext context) {
     return Text(
@@ -21,7 +23,7 @@ class CustomText extends StatelessWidget {
         color: color,
         fontSize: fontSize,
         fontWeight: fontWeight,
-        fontFamily: 'InriaSerif'
+        fontFamily: fontFamily,
       ),
       textAlign: textAlign,
     );

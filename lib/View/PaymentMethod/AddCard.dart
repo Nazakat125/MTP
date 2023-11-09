@@ -77,8 +77,8 @@ class _AddCardState extends State<AddCard> {
                       CustomLabelTextField(
                         width: 154.w,
                         controller: cvv,
-                        hintText: '###',
-                        label: AppText.CVV,
+                        hintText: AppText.Enter_here,
+                        label: 'Cvv',
                       ),
                     ],
                   ),

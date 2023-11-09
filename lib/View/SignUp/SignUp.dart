@@ -36,7 +36,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 Center(
                   child: CustomText(
-                    text: AppText.Sign_Up,
+                    text: 'Sign Up',
                     fontWeight: FontWeight.w700,
                     fontSize: 32.sp,
                     color: AppColor.black,
@@ -94,7 +94,7 @@ class _SignUpState extends State<SignUp> {
                     Get.to(()=>LogIn());
                   },
                   child: CustomText(
-                    text: AppText.Switch_to_Login,
+                    text: 'Switch to login',
                     fontSize: 20.sp,
                     color: AppColor.black,
                     fontWeight: FontWeight.w500,

@@ -193,7 +193,7 @@ class _LoanDetailState extends State<LoanDetail> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CustomText(
-                          text: '11:30 PM',
+                          text: '11:30 pm',
                           fontWeight: FontWeight.w400,
                           fontSize: 12.sp,
                           color: AppColor.black,
@@ -228,7 +228,7 @@ class _LoanDetailState extends State<LoanDetail> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CustomText(
-                          text: '11:30 PM',
+                          text: '11:30 pm',
                           fontWeight: FontWeight.w400,
                           fontSize: 12.sp,
                           color: AppColor.black,

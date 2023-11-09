@@ -49,7 +49,7 @@ class _AccessBankState extends State<AccessBank> {
                     height: 25.h,
                   ),
                   CustomText(
-                    text: AppText.AccessMTP_uses_Plaid_to_link_your_bank,
+                    text: 'Access MTP uses plaid to link your bank',
                     fontSize: 20.sp,
                     fontWeight: FontWeight.w700,
                     color: AppColor.black,
@@ -82,12 +82,14 @@ class _AccessBankState extends State<AccessBank> {
                                 CustomSizeBox(
                                   height: 20.h,
                                 ),
-                                CustomText(
-                                  text: AppText
-                                      .Tranfer_of_your_information_is_encrypted_end_to_end,
-                                  fontSize: 14.sp,
-                                  fontWeight: FontWeight.w400,
-                                  color: AppColor.black,
+                                SizedBox(
+                                  width: 200.w,
+                                  child: CustomText(
+                                    text: 'Transfer of your information is encrypted end to end',
+                                    fontSize: 14.sp,
+                                    fontWeight: FontWeight.w400,
+                                    color: AppColor.black,
+                                  ),
                                 ),
                               ],
                             ),
@@ -118,8 +120,7 @@ class _AccessBankState extends State<AccessBank> {
                                 SizedBox(
                                   width: 200.w,
                                   child: CustomText(
-                                    text: AppText
-                                        .Your_credentials_will_never_be_made_accessible_to_this_application,
+                                    text: 'Your credentials will never be made accesible to this application',
                                     fontSize: 14.sp,
                                     fontWeight: FontWeight.w400,
                                     color: AppColor.black,

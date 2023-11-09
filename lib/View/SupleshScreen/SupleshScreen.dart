@@ -48,12 +48,14 @@ class _SupleshScreenState extends State<SupleshScreen> {
             text: AppText.ACCESS,
             fontSize: 32.sp,
             fontWeight: FontWeight.w700,
+            fontFamily: 'InriaSerif',
             color: AppColor.darkgreen,
           ),
           CustomText(
             text: AppText.MTP,
             fontSize: 80.sp,
             fontWeight: FontWeight.w700,
+            fontFamily: 'InriaSerif',
             color: AppColor.darkgreen,
           ),
           CustomText(
@@ -61,6 +63,7 @@ class _SupleshScreenState extends State<SupleshScreen> {
             fontSize: 18.sp,
             fontWeight: FontWeight.w400,
             color: AppColor.green10,
+              fontFamily: 'InriaSerif'
           )
         ],
       ),

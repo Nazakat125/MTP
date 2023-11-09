@@ -36,7 +36,7 @@ class CustomTextFromField extends StatelessWidget {
               hintText: hintText,
               hintStyle: TextStyle(
                   color: AppColor.gray,
-                fontFamily: "InriaSerif"
+                fontFamily: "inter"
               ),
               suffixIcon:suffixIcon,
               suffix: suffix,

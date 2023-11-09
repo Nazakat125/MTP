@@ -94,7 +94,7 @@ class _LogInState extends State<LogIn> {
                         Get.to(() => SignUp());
                       },
                       child: CustomText(
-                        text: AppText.Switch_to_SignUp,
+                        text: 'Switch to sign up',
                         fontSize: 20.sp,
                         color: AppColor.black,
                         fontWeight: FontWeight.w500,

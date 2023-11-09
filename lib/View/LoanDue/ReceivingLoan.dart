@@ -50,8 +50,7 @@ class _RecevingLoanState extends State<RecevingLoan> {
                 children: [
                   Center(
                     child: CustomText(
-                      text: AppText
-                          .Enter_the_detail_of_the_loan_you_want_to_recevie,
+                      text: 'Enter the details of the loan\nyou want to receive',
                       fontWeight: FontWeight.w500,
                       fontSize: 16.sp,
                       color: AppColor.black,
@@ -64,7 +63,7 @@ class _RecevingLoanState extends State<RecevingLoan> {
                   CustomLabelTextField(
                       controller: recevieLoan,
                       label: AppText.Loan_Amount,
-                      hintText: AppText.Enter_Amount_here),
+                      hintText: AppText.Enter_here),
                   CustomSizeBox(
                     height: 30.h,
                   ),
@@ -101,7 +100,7 @@ class _RecevingLoanState extends State<RecevingLoan> {
                             shape: RoundedRectangleBorder(
                                 side: BorderSide(color: Colors.transparent)),
                             title: CustomText(
-                              text: '1 Mounth',
+                              text: '1 Month',
                               fontWeight: FontWeight.w800,
                               fontSize: 16.sp,
                               color: AppColor.black,

@@ -34,9 +34,9 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                   ),
                   Center(
                     child: CustomText(
-                      text: AppText.Two_Step_Verification,
+                      text: '2 Step Verification',
                       fontWeight: FontWeight.w700,
-                      fontSize: 32.sp,
+                      fontSize: 30.sp,
                       color: AppColor.black,
                     ),
                   ),
@@ -83,7 +83,7 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                       decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           color: AppColor.button,
-                          borderRadius: BorderRadius.circular(15.r),
+                          borderRadius: BorderRadius.circular(8.r),
                           border:
                               Border.all(color: Colors.transparent, width: 2.w),
                           boxShadow: [
@@ -104,7 +104,7 @@ class _TwoStepVarificationState extends State<TwoStepVarification> {
                       decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           color: AppColor.white,
-                          borderRadius: BorderRadius.circular(15.r),
+                          borderRadius: BorderRadius.circular(8.r),
                           border:
                               Border.all(color: Colors.transparent, width: 1.w),
                           boxShadow: [

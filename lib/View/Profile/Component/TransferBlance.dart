@@ -27,7 +27,7 @@ class _TransferBlanceState extends State<TransferBlance> {
           children: [
             Center(
               child: CustomText(
-                text: AppText.Transfer_Blance,
+                text: 'Transfer Balance',
                 fontWeight: FontWeight.w700,
                 fontSize: 32.sp,
                 color: AppColor.black,
@@ -37,7 +37,7 @@ class _TransferBlanceState extends State<TransferBlance> {
             Center(
 
               child: CustomText(
-                text: AppText.Enter_the_Amount_of_money_that_you_want_to_transfer,
+                text: 'Enter the amount of money\nthat you want to transfer',
                 fontWeight: FontWeight.w500,
                 fontSize: 16.sp,
                 color: AppColor.black,

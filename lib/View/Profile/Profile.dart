@@ -56,7 +56,7 @@ class _ProfileState extends State<Profile> {
                     child: Column(
                       children: [
                         CustomText(
-                          text: AppText.Avalible_Blance,
+                          text: AppText.Available_Balance,
                           fontWeight: FontWeight.w700,
                           fontSize: 16.sp,
                           color: AppColor.shadow,
@@ -86,7 +86,7 @@ class _ProfileState extends State<Profile> {
                                 },
                               );
                             },
-                            text: AppText.Transfer_Blance,height: 50.h,),
+                            text: 'Transfer Balance',height: 50.h,),
                       ],
                     ),
                   )),
@@ -106,17 +106,17 @@ class _ProfileState extends State<Profile> {
               CustomSizeBox(
                 height: 14.h,
               ),
-              CustomRow(text: AppText.Payments_link, onTap: () {
+              CustomRow(text: 'Payments linked', onTap: () {
                 Get.to(()=>PaymentInfo());
               }),
               CustomSizeBox(
                 height: 14.h,
               ),
-              CustomRow(text: AppText.Change_Password, onTap: () {}),
+              CustomRow(text: 'Change password', onTap: () {}),
               CustomSizeBox(
                 height: 14.h,
               ),
-              CustomRow(text: AppText.Notification_Setting, onTap: () {}),
+              CustomRow(text: 'Notification settings', onTap: () {}),
               CustomSizeBox(
                 height: 14.h,
               ),
